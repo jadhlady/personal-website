@@ -2,9 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation {
+  background-color: #333;
+  overflow: hidden;
+  float: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
