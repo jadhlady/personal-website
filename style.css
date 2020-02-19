@@ -1,18 +1,111 @@
-.main{
+@font-face {
+  font-family: TSBlock;
+  src: url(TS_Block_Bold.ttf);
+}
 
-ul.main {
+@font-face {
+  font-family: CodeBold;
+  src: url(Code_Bold.otf);
+}
+
+@font-face {
+  font-family: CodeLight;
+  src: url(Code_Light.otf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoThin;
+  src: url(Roboto-Thin.ttf);
+}
+
+
+
+ul.navbar{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-li{
+ul.navbar li{
+  float: center;
+}
+
+
+ul.navbar li a {
   float: left;
+  color: white;
+  text-align: center;
+  width: 23%;
+  font-size: 24px;
+  font-family: RobotoThin;
+  padding: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
-a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
+ul.navbar li a.active-page {
+      border-bottom: 5px solid white;
 }
+
+
+@media screen and (max-width: 1200px) {
+  ul.navbar li a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+body{
+  margin:0;
+  background-color: #000;
+}
+
+h1 {
+  display: block;
+  font-size: 100px;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0;
+  font-family: TSBlock;
+  color: white;
+  letter-spacing: 5px
+  text-align: center;
+}
+
+h2 {
+  display: block;
+  font-size: 75px;
+  margin-top: -20px;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: TSBLOCK;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  display: block;
+  font-size: 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color:white;
+  font-family: Geneva;
+  text-align: center;
 }
